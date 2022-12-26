@@ -1,8 +1,9 @@
 rusty-container:
   build: ./docker
+  container_name: rusty-container
   ports:
     - "8080"
   volumes:
-    - "./:/src/"
+    - "./src:/src/"
   stdin_open: true 
   tty: true
